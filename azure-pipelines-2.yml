@@ -11,7 +11,7 @@ pool:
 
 steps:
 - script: |
-    sudo install openjdk-13-jdk  
+    install openjdk-13-jdk  
   displayName: Installing JDK 13
 
 - task: Maven@3
