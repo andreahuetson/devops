@@ -11,7 +11,7 @@ pool:
 
 steps:
 - script: |
-    sudo install openjdk-13-jdk  
+    sudo apt install default-jdk
   displayName: Installing JDK 13
 
 - task: JavaToolInstaller@0
