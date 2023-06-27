@@ -19,6 +19,7 @@ steps:
     jdkFile: '/Users/myagent/_work/1/s/jdk-20_macros-x64_bin.tar.gz'
     cleanDestinationDirectory: false
     
+    
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
