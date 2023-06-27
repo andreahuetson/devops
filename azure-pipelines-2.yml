@@ -8,7 +8,15 @@ trigger:
 
 pool:
   name: Default
-  container: adoptopenjdk:latest
+
+- task: JavaToolInstaller@0
+  inputs:
+    versionSpec: '8'
+    jdkArchitectureOption: 'x86'
+    jdkSourceOption: 'LocalDirectory'
+    jdkFile: '/Users/andreahuetson/Desktop'
+    jdkDestinationDirectory: '/Users/andreahuetson/Desktop'
+    cleanDestinationDirectory: true
 
 steps:
 - task: Maven@3
