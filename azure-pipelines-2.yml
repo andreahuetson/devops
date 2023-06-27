@@ -16,7 +16,7 @@ steps:
     jdkArchitectureOption: 'x86'
     jdkSourceOption: 'LocalDirectory'
     jdkFile: '/Users/andreahuetson/Desktop'
-    jdkDestinationDirectory: '/Users/andreahuetson/Desktop'
+    jdkDestinationDirectory: '/Download'
     cleanDestinationDirectory: true
 - task: Maven@3
   inputs:
