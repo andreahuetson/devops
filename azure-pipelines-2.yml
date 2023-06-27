@@ -11,17 +11,13 @@ pool:
   name: Default
 
 steps:
-- script: 
-    sudo apt update
-    sudo apt install openjdk-13-jdk
-  displayName: Installing JDK 13
-
 - task: JavaToolInstaller@0
-  displayName: Using JDK 13
   inputs:
-    versionSpec: "13"
-    jdkArchitectureOption: x64
-    jdkSourceOption: "PreInstalled"
+    versionSpec: '11'
+    jdkArchitectureOption: 'x64'
+    jdkSourceOption: 'LocalDirectory'
+    jdkFile: 'Download/jdk-11.0.8_linux-aarch64_bin.tar.gz'
+    cleanDestinationDirectory: false
 
 - task: Maven@3
   inputs:
