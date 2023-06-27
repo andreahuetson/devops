@@ -16,7 +16,7 @@ steps:
     versionSpec: '11'
     jdkArchitectureOption: 'x64'
     jdkSourceOption: 'LocalDirectory'
-    jdkFile: '/Users/myagent/_work/1/s/JAVA_HOME_11_X64_jdk-11.0.8_linux-aarch64_bin.tar.gz'
+    jdkFile: '/Users/andreahuetson/myagent/_work/1/s/JAVA_HOME_11_X64_jdk-11.0.8_linux-aarch64_bin.tar.gz'
     cleanDestinationDirectory: false
 
 - task: Maven@3
