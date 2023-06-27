@@ -11,13 +11,6 @@ pool:
   name: Default
 
 steps:
-- task: JavaToolInstaller@0
-  inputs:
-    versionSpec: '11'
-    jdkArchitectureOption: 'x64'
-    jdkSourceOption: 'LocalDirectory'
-    jdkFile: '/Users/myagent/_work/1/s/JAVA_HOME_11_X64_JAVA_HOME_11_X64_jdk-11.0.8_linux-aarch64_bin_tar.gz'
-    cleanDestinationDirectory: false
 
 - task: Maven@3
   inputs:
