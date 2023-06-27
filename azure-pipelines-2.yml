@@ -11,8 +11,15 @@ pool:
 
 steps:
 - script: |
-    install openjdk-13-jdk  
+    sudo install openjdk-13-jdk  
   displayName: Installing JDK 13
+
+- task: JavaToolInstaller@0
+  displayName: Using JDK 13
+  inputs:
+    versionSpec: "13"
+    jdkArchitectureOption: x64
+    jdkSourceOption: "PreInstalled"
 
 - task: Maven@3
   inputs:
