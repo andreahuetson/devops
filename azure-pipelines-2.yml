@@ -16,7 +16,7 @@ steps:
     versionSpec: '11'
     jdkArchitectureOption: 'x64'
     jdkSourceOption: 'LocalDirectory'
-    jdkFile: '/Users/myagent/_work/1/s/jdk-20_macros-x64_bin.tar.gz'
+    jdkFile: '/Users/myagent/_work/1/s/JAVA_HOME_11_X64_jdk-20_macros-x64_bin_tar.gz'
     cleanDestinationDirectory: false
 
 - task: CmdLine@2
