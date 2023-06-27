@@ -9,6 +9,7 @@ trigger:
 pool:
   name: Default
 
+steps:
 - task: JavaToolInstaller@0
   inputs:
     versionSpec: '8'
@@ -17,8 +18,6 @@ pool:
     jdkFile: '/Users/andreahuetson/Desktop'
     jdkDestinationDirectory: '/Users/andreahuetson/Desktop'
     cleanDestinationDirectory: true
-
-steps:
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
