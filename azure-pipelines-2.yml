@@ -18,7 +18,10 @@ steps:
     jdkSourceOption: 'LocalDirectory'
     jdkFile: '/Users/myagent/_work/1/s/jdk-20_macros-x64_bin.tar.gz'
     cleanDestinationDirectory: false
-    
+
+- task: CmdLine@2
+  inputs:
+    script: 'SET PATH=/Users/myagent/_work/1/s/jdk-20.0.1.jdk/Contents/Home'
     
 - task: Maven@3
   inputs:
